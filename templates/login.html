@@ -1,0 +1,28 @@
+<ion-view view-title="Login" class="login" hide-nav-bar="true">
+    <ion-content class="has-header" style="height:100% !important">
+      <div class="padding-bottom padding-left padding-right">
+		<div class="iconimg">
+			<img src="img/icon.png" width="50%" />
+		</div>
+		<div class="loginmsg">
+			<h1>Login</h1>
+			<div class="padding-vertical">
+			Om deze app te kunnen gebruiken heeft u een wachtwoord nodig. Deze verkrijgt u via LiftAcademy na het volgen van een training. U kunt zelf een gebruikersnaam kiezen.
+			</div>
+		</div>
+      </div>
+    <form name="login" ng-submit="doLogin(loginData)">
+      <div class="list">
+        <label class="item item-input">
+          <input type="text" ng-model="loginData.username" placeholder="Gebruikersnaam">
+        </label>
+        <label class="item item-input">
+          <input type="password" ng-model="loginData.password" placeholder="Wachtwoord">
+        </label>
+        <label class="item">
+          <button class="button button-block button-positive" type="submit">Log in</button>
+        </label>
+      </div>
+    </form>
+  </ion-content>
+</ion-view>

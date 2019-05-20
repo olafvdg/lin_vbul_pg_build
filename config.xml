@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets" xmlns:gap = "http://phonegap.com/ns/1.0" 
+	id        = "nl.liftacademy.veiligwerken" 
+	version   = "1.1" >
+
+<name>Veilig bevrijden</name>
+
+<description>Veilig bevrijden uit liften</description>
+
+<author href="https://www.zuurstof.nl" email="info@zuurstof.nl">
+Zuurstof B.V.
+</author>
+
+<icon src="img/icons/ios60.png" platform="ios" width="60" height="60" />
+<icon src="img/icons/ios120.png" platform="ios" width="120" height="120" />
+<icon src="img/icons/ios180.png" platform="ios" width="180" height="180" />
+<icon src="img/icons/ios80.png" platform="ios" width="80" height="80" />
+<icon src="img/icons/ios87.png" platform="ios" width="87" height="87" />
+<icon src="img/icons/ios29.png" platform="ios" width="29" height="29" />
+<icon src="img/icons/ios57.png" platform="ios" width="57" height="57" />
+<icon src="img/icons/ios58.png" platform="ios" width="58" height="58" />
+<icon src="img/icons/ios114.png" platform="ios" width="114" height="114" />
+
+<icon src="img/icons/mdpi.png" platform="android" qualifier="mdpi" />
+<icon src="img/icons/hdpi.png" platform="android" qualifier="hdpi" />
+<icon src="img/icons/xhdpi.png" platform="android" qualifier="xhdpi" />
+<icon src="img/icons/xxhdpi.png" platform="android" qualifier="xxhdpi" />
+<icon src="img/icons/xxxhdpi.png" platform="android" qualifier="xxxhdpi" />
+
+<splash src="img/splash/ios_320x480.png" platform="ios" width="320" height="480" />
+<splash src="img/splash/ios_640x1136.png" platform="ios" width="640" height="1136" />
+<splash src="img/splash/ios_750x1334.png" platform="ios" width="750" height="1334" />
+
+<splash src="img/splash/Android_320x480.9.png" platform="android" qualifier="mdpi" />
+<splash src="img/splash/Android_480x800.9.png" platform="android" qualifier="hdpi" />
+<splash src="img/splash/Android_720x1280.9.png" platform="android" qualifier="xhdpi" />
+<splash src="img/splash/Android_1080x1920.9.png" platform="android" qualifier="xxhdpi" />
+<splash src="img/splash/Android_1080x1920.9.png" platform="android" qualifier="xxxhdpi" />
+
+<plugin name="cordova-plugin-whitelist" />
+<plugin name="cordova-plugin-splashscreen" />
+
+<access origin="*" />
+
+<feature name="http://api.phonegap.com/1.0/network" />
+
+<preference name="orientation" value="portrait" />
+<preference name="target-device" value="handset" />
+<preference name="SplashScreen" value="splash"/>
+<preference name="SplashScreenDelay" value="2000"/>
+<preference name="ShowSplashScreenSpinner" value="false" />
+
+<platform name="ios" >
+  <preference name="UIViewControllerBasedStatusBarAppearance" value="false" />
+  <preference name="UIStatusBarHidden " value="true" />
+</platform>
+
+<platform name="android">
+</platform>
+
+</widget>

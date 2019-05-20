@@ -1,0 +1,14 @@
+<ion-view view-title="{{check.CAT}}">
+  <ion-content class="check">
+    <div class="padding">
+      <h1>{{check.KOP}}</h1>
+      <p>&nbsp;</p>
+      <p ng-bind-html="check.TEKST|pipetobreak"></p>
+    </div>
+    <div class="center padding">
+      <a href="#/app/{{check.NA ? 'check/'+check.NA : check.URL}}" class="button button-stable checkbutton">
+        <span class="ion-checkmark-round"></span>
+      </a>
+    </div>
+  </ion-content>
+</ion-view>

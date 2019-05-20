@@ -1,0 +1,12 @@
+<ion-view view-title="{{CAT}}">
+    <ion-content class="checks">
+        <h3 class="padding">{{checks[0].KOP}}</h3>
+    <ion-list>
+            <div ng-repeat="check in checks">
+                <div ng-if="check.LETOP==1" class="item item-divider item-icon-right letop"><span class="icon ion-alert-circled"></span><p>Wordt een rijdende lift gestopt door ontgrendeling van een schachtdeur, dan kan deze ongelijk met een verdiepingsvloer stoppen. Hierbij kunnen de deuren opengaan, waardoor struikelgevaar ontstaat. Laat de bestemmingsverdieping daarom bewaken door een collega of zet de toegang tot de lift daar af.</p></div>
+                <ion-checkbox ng-model="check.checked" ng-change="boxChecked()"  class="item-checkbox-right"><p ng-bind-html="check.TEKST|pipetobreak"></p></ion-checkbox>
+				<div class="separator"><div class="arrow"></div></div>
+            </div>
+    </ion-list>
+    </ion-content>
+</ion-view>
